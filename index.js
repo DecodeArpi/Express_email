@@ -27,11 +27,11 @@ const transporter = nodemailer.createTransport({
 route.post('/expmail',(req,res)=>{
     const{to,subject,text}=req.body;
     const mailInfo = {
-        from: 'arpitaroy2089@gmail.com',
+        from: 'sender's email id',
         to:to,
         subject:subject,
         text:text,
-        //to: 'arpitaroy2089@gmail.com',
+        //to: 'receivers email id',
         //subject: 'Sending email using Express Node Js',
         //text:'Hurray it was easy application',
         //html:'<h1>Hello User, We have been successfully able to send an email for the very FIRST time.</h1>',
